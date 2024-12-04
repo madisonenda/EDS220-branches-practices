@@ -1,6 +1,10 @@
 # Branching practice
 
 ```{r}
+library(tidyverse)
+```
+
+```{r}
 
 ```
 
@@ -10,5 +14,7 @@
 
 
 ```{r}
-
+starwars %>%  filter(species == 'Human') %>% 
+  ggplot(aes(x=height, y=mass)) +
+  geom_point() 
 ```
