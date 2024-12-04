@@ -2,7 +2,9 @@
 
 ```{r}
 library(tidyverse)
+```
 
+```
 # Code team member 1
 starwars %>% 
 filter(species== 'Human') %>%
@@ -16,5 +18,7 @@ geom_point()
 
 
 ```{r}
-
+starwars %>%  filter(species == 'Human') %>% 
+  ggplot(aes(x=height, y=mass)) +
+  geom_point() 
 ```
